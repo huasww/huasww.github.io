@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>fig</title>
+	<style> 
+		#square {
+			height: 100px;
+			width: 200px;
+			background-color: #D3D297;
+			position: absolute;
+			top: 200px;
+			left: 250px;
+			z-index: -1;
+			transform: rotate(50deg);
+		}
+
+        #circle {
+         	height: 100px;
+         	width:100px;
+         	border-radius: 50%;
+         	background-color: #97C7D3;
+         	position: absolute;
+         	left: 350px;
+         	top: 150px;
+         	z-index: 1;
+         	transform: rotate(30degs);
+        }
+
+        #triange {
+        height: 0;
+        width: 0;
+        border-top: 140px solid #97D3B4;
+        border-left: 70px solid transparent;
+        border-right: 70px solid transparent;
+        position: absolute;
+        top: 60px;
+        left: 200px;
+        z-index: -1;
+        transform: rotate(40deg);
+        }
+        #element {
+        animation-duration: 5s;
+        animation-name: anim;
+        animation-iteration-count: infinite; 
+        }
+        @keyframes anim {
+        from { 
+        height: 100px;
+		width: 200px;
+		background-color: #D3D297;
+		border-radius: 0%;
+        }
+        to {
+        height: 100px;
+		width: 200px;
+		background-color: #D3D297;
+		border-radius: 0%;
+        }
+        50% {
+        height: 100px;
+        width:100px;
+        border-radius: 50%;
+        background-color: #97C7D3;
+        }
+}
+	</style>
+</head>
+<body>
+<div id="square"></div>
+<div id="circle"></div>
+<div id="triange"></div>
+<div id="element"></div>
+</html>
